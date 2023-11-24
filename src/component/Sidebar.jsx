@@ -1,9 +1,10 @@
 import img from "../../public/img/mujahid.png";
 export default function Sidebar() {
   return (
-    <div className="w-[600px] md:flex bg-slate-300 items-center">
+    <>
+        <div className="w-[600px] md:flex bg-slate-300 items-center">
       <div>
-        <aside className="w-44 p-3 rounded-lg">
+        <aside className="w-44 p-3 rounded-lg ">
           <img className="w-full rounded-md" src={img} alt="profile" />
         </aside>
         
@@ -32,5 +33,34 @@ export default function Sidebar() {
       </ul>
       </div>
     </div>
-  );
+
+    <div className=" capitalize">
+        <ul>
+            <li className=" flex items-center w-44 h-20">
+                <i className='bx bxs-phone p-3 rou mb-5 bg-gradient-to-tl from-slate-400 to-blue-100'></i>
+                <div className=" flex flex-col">
+                    <small>Phone</small>
+                    <small>+8801737705511</small>
+                </div>
+            </li>
+
+            <li className=" flex items-center">
+            <i className='bx h-full bxs-envelope p-3 rou mb-5 bg-gradient-to-tl from-slate-400 to-blue-100' ></i>
+                <div className=" flex flex-col justify-between">
+                    <small>Email</small>
+                    <small>mujahidislam400301@gmail.com</small>
+                </div>
+            </li>
+            
+            <li className=" flex items-center">
+            <i className='bx bxs-location-plus p-3 rou mb-5 bg-gradient-to-tl from-slate-400 to-blue-100' ></i>
+                <div className=" flex flex-col justify-between">
+                    <small>location</small>
+                    <small>Thakurgaon , Rongpur, Bangladesh</small>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </>
+  )
 }
