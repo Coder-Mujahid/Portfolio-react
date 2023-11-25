@@ -2,15 +2,15 @@ import img from "../../public/img/mujahid.png";
 import bd from '../../public/img/bd logo.png'
 export default function Sidebar() {
   return (
-    <div className=" col-span-1 flex flex-col justify-center w-full h-screen">
+    <div className=" col-span-1 flex flex-col justify-center w-full min-h-screen">
 
-          <div className="md:flex  items-center px-10">
-        <div>
-          <aside className="w-44 rounded-lg ">
+          <div className="md:flex items-center mb-10 md:mb-0 pt-5 md:px-10">
+        <div className=" flex items-center w-full">
+          <aside className="w-full md:w-44  rounded-lg mb-5 md:mb-0">
             <img className="w-full rounded-md bg-gradient-to-r from-[#83c5be] to-[#457b9d]" src={img} alt="profile" />
           </aside>
         </div>
-        <div className=" capitalize flex flex-col pl-5 justify-end h-full gap-2 w-full">
+        <div className=" capitalize flex flex-col md:pl-5 md:justify-end md:h-full gap-2  w-full">
           {/* <h2 className=" text-3xl font-semibold text-slate-800 text-center w-full">Welcome to my portfolio  </h2> */}
           <h2 className=" text-2xl font-semibold text-blue-500">
             md. mujahidul islam
@@ -37,7 +37,7 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <div className=" capitalize p-10">
+      <div className=" capitalize md:p-10 mb-5">
         <ul className=" flex flex-col gap-4 mb-5">
           <li className=" flex items-center ">
             <i className="bx bxs-phone shadow-xl shadow-slate-400 text-2xl rounded-lg  py-2 px-3 bg-gradient-to-r from-[#83c5be] to-[#457b9d]"></i>

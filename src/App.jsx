@@ -5,7 +5,7 @@ function App() {
   
 
   return (
-    <div className=' grid grid-cols-3'>
+    <div className=' w-11/12 mx-auto lg:grid grid-cols-3'>
       <Sidebar></Sidebar>
     </div>
   )
