@@ -40,32 +40,16 @@ export default function Sidebar() {
 
           <ul className="flex w-full gap-3 ">
             <li>
-              <img
-                className=" w-10 shadow-md shadow-slate-300 p-1 rounded-lg"
-                src={linkedin}
-                alt="linkedin"
-              />
+            <Link to={"https://www.linkedin.com/in/mujahid-islam/"} target="_blank"><img className=" w-10 shadow-md shadow-slate-300 p-1 rounded-lg" src={linkedin} alt="linkedin" /></Link>
             </li>
             <li>
-            <img
-                className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
-                src={twitter}
-                alt="twitter"
-              />
+            <Link to={"https://twitter.com/Coder_Mujahid"} target="_blank"><img className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg" src={twitter} alt="twitter"/></Link>
             </li>
             <li>
-            <img
-                className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
-                src={facebook}
-                alt="facebook"
-              />
+            <Link to={"https://www.facebook.com/mojahidul.islam.50596?mibextid=ZbWKwL"} target="_blank"><img className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg" src={facebook} alt="facebook"/></Link>
             </li>
             <li>
-            <img
-                className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
-                src={github}
-                alt="github"
-              />
+              <Link to={"https://github.com/Coder-Mujahid"} target="_blank"><img className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg" src={github} alt="github"/></Link>
             </li>
           </ul>
 
@@ -127,6 +111,7 @@ export default function Sidebar() {
 
 // text animation
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
 
 const ExampleComponent = () => {
   return (
