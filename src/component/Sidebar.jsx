@@ -5,7 +5,7 @@ export default function Sidebar() {
     <div className=" col-span-1 flex flex-col justify-center w-full min-h-screen">
 
           <div className="md:flex items-center mb-10 md:mb-0 pt-5 md:px-10">
-        <div className=" flex items-center w-full">
+        <div className=" flex items-center lg:justify-center w-full">
           <aside className="w-full md:w-44  rounded-lg mb-5 md:mb-0">
             <img className="w-full rounded-md bg-gradient-to-r from-[#83c5be] to-[#457b9d]" src={img} alt="profile" />
           </aside>
