@@ -3,12 +3,18 @@ import bd from "../../public/img/bd logo.png";
 import phone from "../../public/img/icons8-phone.gif";
 import email from "../../public/img/icons8-email.gif";
 import location from "../../public/img/icons8-location.gif";
+import linkedin from "../../public/img/icons8-linkedin.gif";
+import twitter from "../../public/img/icons8-twitter.gif";
+import facebook from "../../public/img/icons8-facebook.gif";
+import github from "../../public/img/icons8-github.gif";
+
+
 export default function Sidebar() {
   return (
     <div className=" col-span-1 flex flex-col justify-center w-full min-h-screen">
-      <div className="md:flex items-center mb-10 md:mb-0 pt-5 md:px-10">
-        <div className=" flex items-center lg:justify-center w-full">
-          <aside className="w-full md:w-44  rounded-lg mb-5 md:mb-0">
+      <div className="md:flex items-center mb-10 md:mb-0 pt-5 md:pl-10">
+        <div className=" flex items-center  w-auto">
+          <aside className="w-full md:w-40  rounded-lg mb-5 md:mb-0">
             <img
               className="w-full rounded-md bg-gradient-to-r from-[#83c5be] to-[#457b9d]"
               src={img}
@@ -16,13 +22,13 @@ export default function Sidebar() {
             />
           </aside>
         </div>
-        <div className=" capitalize flex flex-col md:pl-5 md:justify-end md:h-full gap-2  w-full">
+        <div className=" capitalize flex flex-col md:px-3 md:justify-end md:h-full gap-2  w-full">
           {/* <h2 className=" text-3xl font-semibold text-slate-800 text-center w-full">Welcome to my portfolio  </h2> */}
           <h2 className=" text-2xl font-semibold text-blue-500">
-            md. mujahidul islam
+            md. mujahid islam
           </h2>
           <ExampleComponent></ExampleComponent>
-          <small className=" font-semibold">
+          <small className=" font-semibold mb-3">
             <img
               className=" w-[30px] inline-block mr-2 h-[16px]"
               src={bd}
@@ -30,23 +36,39 @@ export default function Sidebar() {
             />
             from bangladesh
           </small>
-          <ul className="flex text-3xl  ">
+
+
+          <ul className="flex w-full gap-3 ">
             <li>
-              <i className="bx bxl-linkedin-square pr-4 text-[#0077b5]"></i>
+              <img
+                className=" w-10 shadow-md shadow-slate-300 p-1 rounded-lg"
+                src={linkedin}
+                alt="linkedin"
+              />
             </li>
             <li>
-              <i className="bx bxl-twitter pr-4 text-[#1DA1F2]"></i>
+            <img
+                className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
+                src={twitter}
+                alt="twitter"
+              />
             </li>
             <li>
-              <i className="bx bxl-facebook-square pr-4 text-[#0866FF]"></i>
+            <img
+                className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
+                src={facebook}
+                alt="facebook"
+              />
             </li>
             <li>
-              <i className="bx bxl-github pr-4 text-[#2b3137]"></i>
-            </li>
-            <li>
-              <i className="bx bxl-telegram pr-4 text-[#0088cc]"></i>
+            <img
+                className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
+                src={github}
+                alt="github"
+              />
             </li>
           </ul>
+
         </div>
       </div>
 
@@ -67,7 +89,7 @@ export default function Sidebar() {
           </li>
 
           <li className=" flex items-center">
-          <img
+            <img
               className=" w-12 border-[1px] border-slate-300 shadow-md shadow-slate-300 p-2 rounded-lg"
               src={email}
               alt="email"
@@ -81,7 +103,7 @@ export default function Sidebar() {
           </li>
 
           <li className=" flex items-center">
-          <img
+            <img
               className=" w-12 border-[1px] border-slate-300 shadow-md shadow-slate-300 p-2 rounded-lg"
               src={location}
               alt="location"
@@ -108,13 +130,14 @@ import { TypeAnimation } from "react-type-animation";
 
 const ExampleComponent = () => {
   return (
-    <TypeAnimation
+    <TypeAnimation className=" text-xl lg:text-[16px] font-semibold"
       sequence={[
         "frontend web developer", // Types 'One'
         1000, // Waits 1s
         "Junior Frontend Developer", // Deletes 'One' and types 'Two'
         1000, // Waits 2s
-        "Frontend Architect", // Types 'Three' without deleting 'Two'
+        "Frontend Architect",
+        1000, // Types 'Three' without deleting 'Two'
         () => {
           console.log("Sequence completed");
         },
@@ -122,7 +145,7 @@ const ExampleComponent = () => {
       wrapper="span"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: "18px", fontWeight: "600", display: "inline-block" }}
+      style={{ display: "inline-block" }}
     />
   );
 };
