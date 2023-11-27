@@ -2,13 +2,14 @@ import react from "../../public/img/icons8-react-100.png";
 import responsive from "../../public/img/icons8-responsive-web-100.png";
 import TPI from "../../public/img/tpi-removebg-preview.png";
 import SSc from "../../public/img/icons8-mosque-48.png";
+import UIT from "../../public/img/UIT.png";
 
 export default function Home() {
   return (
     <div>
+    {/* about section */}
       <div className=" flex gap-5 flex-col mb-5">
         <h2 className="text-2xl w-32 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
-          {" "}
           about me
         </h2>
         <p className=" text-sm font-semibold text-justify">
@@ -22,10 +23,9 @@ export default function Home() {
           responsiveness, I thrive on the challenges of modern web development.
         </p>
       </div>
-
+      {/* my work section */}
       <div className=" mb-5">
         <h2 className="mb-5 text-2xl w-36 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
-          {" "}
           What I Do !
         </h2>
 
@@ -43,10 +43,9 @@ export default function Home() {
           ></Card>
         </div>
       </div>
-
+        {/* education section */}
       <div className="mb-5 w-full">
         <h2 className="mb-5 text-2xl w-36 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
-          {" "}
           education
         </h2>
 
@@ -81,8 +80,35 @@ export default function Home() {
 
         </div>
       </div>
+      {/* training section */}
+      <div className="mb-5 w-full">
+        <h2 className="mb-5 text-2xl text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
+          training and experience
+        </h2>
+
+        <div className=" md:flex gap-5 w-full">
+
+          <div className=" w-full p-3 shadow-md rounded-lg shadow-slate-400 md:mb-0 md:flex items-center gap-10 md:items-start">
+            <img className=" md:w-48 w-full h-full  mb-2 " src={UIT} alt="TPIimg" />
+            <div className=" flex flex-col justify-end mt-8">
+                <h2 className="text-xl mb-3 font-semibold inline-block capitalize ">
+                MERN Stack developer
+                </h2>
+                <h2 className="text-lg mb-1 font-semibold inline-block capitalize ">
+                Universe IT Institute
+                </h2>
+                <p className=" text-sm mb-1  font-semibold text-justify">Duration : 6 month</p>
+                <p className=" text-sm mb-1 font-semibold text-justify">Certification Date : 01/01/2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
-  );
+    
+
+  )
 }
 
 function Card({ img, title, about }) {

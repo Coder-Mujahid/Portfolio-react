@@ -11,7 +11,7 @@ import github from "../../public/img/icons8-github.gif";
 
 export default function Sidebar() {
   return (
-    <div className=" col-span-1 flex flex-col justify-center w-full min-h-screen">
+    <div className=" col-span-1 flex flex-col justify-center md:h-screen h-auto w-full min-h-screen">
       <div className="md:flex items-center mb-10 md:mb-0 pt-5 md:pl-10">
         <div className=" flex items-center  w-auto">
           <aside className="w-full md:w-40  rounded-lg mb-5 md:mb-0">
