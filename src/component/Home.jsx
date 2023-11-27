@@ -51,7 +51,7 @@ export default function Home() {
 
         <div className=" md:flex gap-5 w-full">
 
-          <div className=" w-full p-3 shadow-md rounded-lg shadow-slate-400 mb-5 md:mb-0 flex flex-col items-center md:items-start">
+          <div data-aos="zoom-out" className=" w-full p-3 shadow-md rounded-lg shadow-slate-400 mb-5 md:mb-0 flex flex-col items-center md:items-start">
             <img className=" md:w-24 w-44  mb-2 " src={TPI} alt="TPIimg" />
             <h2 className="text-xl mb-3 font-semibold inline-block capitalize ">
             Diploma In Engineering
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
           
 
-          <div className=" w-full p-3 shadow-md rounded-lg shadow-slate-400 mb-5 md:mb-0 flex flex-col items-center md:items-start">
+          <div data-aos="zoom-out" className=" w-full p-3 shadow-md rounded-lg shadow-slate-400 mb-5 md:mb-0 flex flex-col items-center md:items-start">
             <img className=" md:w-24 w-44  mb-2 " src={SSc} alt="SScimg" />
             <h2 className="text-xl mb-3 font-semibold inline-block capitalize ">
             Secondary School Certificate
@@ -88,7 +88,7 @@ export default function Home() {
 
         <div className=" md:flex gap-5 w-full">
 
-          <div className=" w-full p-3 shadow-md rounded-lg shadow-slate-400 md:mb-0 md:flex items-center gap-10 md:items-start">
+          <div data-aos="zoom-out" className=" w-full p-3 shadow-md rounded-lg shadow-slate-400 md:mb-0 md:flex items-center gap-10 md:items-start">
             <img className=" md:w-48 w-full h-full  mb-2 " src={UIT} alt="TPIimg" />
             <div className=" flex flex-col justify-end mt-8">
                 <h2 className="text-xl mb-3 font-semibold inline-block capitalize ">
@@ -113,7 +113,7 @@ export default function Home() {
 
 function Card({ img, title, about }) {
   return (
-    <div className=" px-3 py-5 shadow-md rounded-lg shadow-slate-400 mb-5 md:mb-0 flex flex-col items-center md:items-start">
+    <div data-aos="zoom-out" className=" px-3 py-5 shadow-md rounded-lg shadow-slate-400 mb-5 md:mb-0 flex flex-col items-center md:items-start">
       <img className=" md:w-16 w-32  mb-3 " src={img} alt="img" />
       <h2 className="text-lg mb-3 font-semibold inline-block capitalize ">
         {title}

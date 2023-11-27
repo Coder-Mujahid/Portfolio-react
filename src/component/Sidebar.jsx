@@ -102,7 +102,7 @@ export default function Sidebar() {
         </ul>
 
         <button className="font-semibold capitalize text-black shadow-xl shadow-slate-400 text-sm py-2 w-full bg-[#4cc9f0] rounded-lg hover:text-white hover:tracking-wider hover:bg-[#00b4d8] transition duration-500 ease-in">
-          View my resume
+          <Link to={"file:///C:/Users/Mujahidul%20Islam/Desktop/Professional%20Resume.pdf"}>View my resume</Link>
         </button>
       </div>
     </div>
