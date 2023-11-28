@@ -73,7 +73,7 @@ export default function Home() {
             <h2 className="text-lg mb-1 font-semibold inline-block capitalize ">
             Abad Takia Mohammadia Fazil Madrasah
             </h2>
-            <p className=" text-sm mb-1  font-semibold text-justify">Computer science and Technology</p>
+            <p className=" text-sm mb-1  font-semibold text-justify">Department : science</p>
             <p className=" text-sm mb-1  font-semibold text-justify">Session : 2017 - 2019</p>
             <p className=" text-sm mb-1 font-semibold text-justify">Passing Year : December 2019</p>
           </div>

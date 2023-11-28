@@ -8,10 +8,9 @@ import twitter from "../../public/img/icons8-twitter.gif";
 import facebook from "../../public/img/icons8-facebook.gif";
 import github from "../../public/img/icons8-github.gif";
 
-
 export default function Sidebar() {
   return (
-    <div className=" col-span-1 flex flex-col justify-center md:h-screen h-auto w-full min-h-screen">
+    <div className=" mt-5 md:mt-10 xl:mt-0 col-span-1 flex flex-col justify-center md:h-screen h-auto w-full min-h-screen">
       <div className="md:flex items-center mb-10 md:mb-0 pt-5 md:pl-10">
         <div className=" flex items-center  w-auto">
           <aside className="w-full md:w-40  rounded-lg mb-5 md:mb-0">
@@ -37,22 +36,52 @@ export default function Sidebar() {
             from bangladesh
           </small>
 
-
           <ul className="flex w-full gap-3 ">
             <li>
-            <Link to={"https://www.linkedin.com/in/mujahid-islam/"} target="_blank"><img className=" w-10 shadow-md shadow-slate-300 p-1 rounded-lg" src={linkedin} alt="linkedin" /></Link>
+              <Link
+                to={"https://www.linkedin.com/in/mujahid-islam/"}
+                target="_blank"
+              >
+                <img
+                  className=" w-10 shadow-md shadow-slate-300 p-1 rounded-lg"
+                  src={linkedin}
+                  alt="linkedin"
+                />
+              </Link>
             </li>
             <li>
-            <Link to={"https://twitter.com/Coder_Mujahid"} target="_blank"><img className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg" src={twitter} alt="twitter"/></Link>
+              <Link to={"https://twitter.com/Coder_Mujahid"} target="_blank">
+                <img
+                  className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
+                  src={twitter}
+                  alt="twitter"
+                />
+              </Link>
             </li>
             <li>
-            <Link to={"https://www.facebook.com/mojahidul.islam.50596?mibextid=ZbWKwL"} target="_blank"><img className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg" src={facebook} alt="facebook"/></Link>
+              <Link
+                to={
+                  "https://www.facebook.com/mojahidul.islam.50596?mibextid=ZbWKwL"
+                }
+                target="_blank"
+              >
+                <img
+                  className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
+                  src={facebook}
+                  alt="facebook"
+                />
+              </Link>
             </li>
             <li>
-              <Link to={"https://github.com/Coder-Mujahid"} target="_blank"><img className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg" src={github} alt="github"/></Link>
+              <Link to={"https://github.com/Coder-Mujahid"} target="_blank">
+                <img
+                  className=" w-10  shadow-md shadow-slate-300 p-1 rounded-lg"
+                  src={github}
+                  alt="github"
+                />
+              </Link>
             </li>
           </ul>
-
         </div>
       </div>
 
@@ -101,9 +130,13 @@ export default function Sidebar() {
           </li>
         </ul>
 
-        <button className="font-semibold capitalize text-black shadow-xl shadow-slate-400 text-sm py-2 w-full bg-[#4cc9f0] rounded-lg hover:text-white hover:tracking-wider hover:bg-[#00b4d8] transition duration-500 ease-in">
-          <Link to={"file:///C:/Users/Mujahidul%20Islam/Desktop/Professional%20Resume.pdf"}>View my resume</Link>
-        </button>
+        <Link
+          target="_blank"
+          to={"https://drive.google.com/file/d/1OUf4t4dGsIpb-THVV1tyQRLuj9jy6hPG/view?usp=drive_link"}>
+           <button className="font-semibold capitalize text-black shadow-xl shadow-slate-400 text-sm py-2 w-full bg-[#4cc9f0] rounded-lg hover:text-white hover:tracking-wider hover:bg-[#00b4d8] transition duration-500 ease-in">
+            View my resume
+          </button>
+        </Link>
       </div>
     </div>
   );
@@ -115,7 +148,8 @@ import { Link } from "react-router-dom";
 
 const ExampleComponent = () => {
   return (
-    <TypeAnimation className=" text-xl lg:text-[16px] font-semibold"
+    <TypeAnimation
+      className=" text-xl lg:text-[16px] font-semibold"
       sequence={[
         "frontend web developer", // Types 'One'
         1000, // Waits 1s
