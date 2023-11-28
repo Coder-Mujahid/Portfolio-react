@@ -36,7 +36,23 @@ export default function Skill() {
         </div>
       </div>
 
-      
+      {/* Design tools */}
+      <div className=" mb-5">
+        <h2 className=" text-2xl  mb-5 capitalize font-semibold text-black">
+          Design tools
+        </h2>
+        <div className=" md:flex gap-5">
+          <Card img={figma} name="figma "></Card>
+
+          <Card img={adobephoto} name="adobe PS"></Card>
+
+          <Card img={adobeXD} name="adobe XD"></Card>
+
+          <Card img={Sketch} name="Sketch"></Card>
+
+        </div>
+      </div>
+        
 
     </div>
   );
