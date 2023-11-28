@@ -52,7 +52,22 @@ export default function Skill() {
 
         </div>
       </div>
-        
+        {/* Extra tools */}
+      <div className=" mb-5">
+        <h2 className=" text-2xl  mb-5 capitalize font-semibold text-black">
+          Extra tools
+        </h2>
+        <div className=" md:flex gap-5">
+          <Card img={Git} name="Git "></Card>
+
+          <Card img={Github} name="Github"></Card>
+
+          <Card img={netlify} name="netlify"></Card>
+
+          <Card img={Sass} name="Sass"></Card>
+
+        </div>
+      </div>
 
     </div>
   );
