@@ -20,13 +20,13 @@ export default function Project() {
             <Card
             img={example2}
             name=" world country details"
-            link=" https://coder-mujahid.github.io/REST_API_with_Modal/"
+            link="https://coder-mujahid.github.io/REST_API_with_Modal/"
             ></Card>
 
             <Card
             img={example3}
-            name=" to do list with js"
-            link=" https://coder-mujahid.github.io/to_do_list/"
+            name="to do list with js"
+            link="https://coder-mujahid.github.io/to_do_list/"
             ></Card>
 
             <Card
@@ -42,12 +42,12 @@ export default function Project() {
 
 function Card({img,name,link}){
     return(
-        <div className='md:flex gap-5 items-center mb-5 w-auto rounded-xl border-[1px] border-slate-100 shadow-md shadow-slate-300 p-3'>
+        <div data-aos="zoom-out" className='md:flex gap-5 items-end mb-5 w-auto rounded-xl border-[1px] border-slate-100 shadow-md shadow-slate-300 p-3'>
             <img className='w-72 md:h-56' src={img} alt={img} />
            <div>
                 <h2 className=" text-lg my-2 capitalize font-semibold text-black">{name} </h2>
                 <small className=' font-semibold text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, adipisci commodi tempora nobis eum ab provident, repudiandae similique omnis facere nostrum repellat temporibus perferendis consequatur, et magni modi deserunt obcaecati.</small>
-                <Link target='_blank' to={"link"}><button className=" my-2 font-semibold capitalize text-black shadow-xl shadow-slate-400 text-sm py-2 w-full bg-[#4cc9f0] rounded-lg hover:text-white hover:tracking-wider hover:bg-[#00b4d8] transition duration-500 ease-in">
+                <Link target='_blank' to={link}><button className=" my-2 font-semibold capitalize text-black shadow-xl shadow-slate-400 text-sm py-2 w-full bg-[#4cc9f0] rounded-lg hover:text-white hover:tracking-wider hover:bg-[#00b4d8] transition duration-500 ease-in">
             View more
           </button></Link>
            </div>
