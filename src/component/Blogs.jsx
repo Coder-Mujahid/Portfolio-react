@@ -58,8 +58,8 @@ function Card({img,name,text,link}){
     return(
         <>
             <div data-aos="zoom-out" className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <aside className=' w-full md:flex items-center justify-center bg-slate-400'>
+            <div className="h-full border-[1px] shadow-lg shadow-slate-200 border-slate-400 border-opacity-60 rounded-lg overflow-hidden">
+            <aside className=' w-full md:flex items-center justify-center bg-stone-200 rounded-lg'>
               <img className="  w-full md:w-48 object-cover object-center" src={img} alt={img} />
             </aside>
               <div className="p-6 flex flex-col justify-end">
