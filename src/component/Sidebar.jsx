@@ -11,7 +11,7 @@ import github from "../../public/img/icons8-github.gif";
 export default function Sidebar() {
   return (
     <div className=" mt-5 md:mt-10 xl:mt-0 col-span-1 flex flex-col justify-center md:h-screen h-auto w-full min-h-screen">
-      <div className="md:flex items-center mb-10 md:mb-0 pt-5 md:pl-10">
+      <div className="md:flex items-center mb-10 md:mb-0 pt-5 ">
         <div className=" flex items-center  w-auto">
           <aside className="w-full md:w-40  rounded-lg mb-5 md:mb-0">
             <img
@@ -24,7 +24,7 @@ export default function Sidebar() {
         <div className=" capitalize flex flex-col md:px-3 md:justify-end md:h-full gap-2  w-full">
           {/* <h2 className=" text-3xl font-semibold text-slate-800 text-center w-full">Welcome to my portfolio  </h2> */}
           <h2 className=" text-2xl font-semibold text-blue-500">
-            md. mujahid islam
+            md. mujahid <br /> islam
           </h2>
           <ExampleComponent></ExampleComponent>
           <small className=" font-semibold mb-3">
@@ -85,7 +85,7 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <div className=" capitalize md:p-10 mb-5">
+      <div className=" capitalize md:py-10 md:pr-10 mb-5">
         <ul className=" flex flex-col gap-4 mb-5">
           <li className=" flex items-center ">
             <img
@@ -149,7 +149,7 @@ import { Link } from "react-router-dom";
 const ExampleComponent = () => {
   return (
     <TypeAnimation
-      className=" text-xl lg:text-[16px] font-semibold"
+      className=" text-xl lg:text-[15px] font-semibold"
       sequence={[
         "frontend web developer", // Types 'One'
         1000, // Waits 1s

@@ -21,7 +21,7 @@ export default function Skill() {
         <h2 className=" text-2xl  mb-5 capitalize font-semibold text-black">
           front end tools
         </h2>
-        <div className=" md:flex gap-5">
+        <div className="  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <Card img={html} name="HTML 5 "></Card>
 
           <Card img={css} name="CSS 3"></Card>
@@ -41,7 +41,7 @@ export default function Skill() {
         <h2 className=" text-2xl  mb-5 capitalize font-semibold text-black">
           Design tools
         </h2>
-        <div className=" md:flex gap-5">
+        <div className="  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <Card img={figma} name="figma "></Card>
 
           <Card img={adobephoto} name="adobe PS"></Card>
@@ -57,7 +57,7 @@ export default function Skill() {
         <h2 className=" text-2xl  mb-5 capitalize font-semibold text-black">
           Extra tools
         </h2>
-        <div className=" md:flex gap-5">
+        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <Card img={Git} name="Git "></Card>
 
           <Card img={Github} name="Github"></Card>
@@ -75,9 +75,9 @@ export default function Skill() {
 
 function Card({ img, name }) {
   return (
-    <div data-aos="zoom-out" className="mb-5 md:mb-0 p-4 flex flex-col items-center rounded-xl border-[1px] border-slate-100 shadow-md shadow-slate-300">
-      <img className="md:w-20 w-full" src={img} alt={img} />
-      <h2 className=" text-lg capitalize font-semibold text-black">
+    <div data-aos="zoom-out" className="mb-5 w-full md:mb-0 p-4 flex flex-col items-center rounded-xl border-[1px] border-slate-100 shadow-md shadow-slate-300">
+      <img className="md:w-20 w-full p-10 md:p-1" src={img} alt={img} />
+      <h2 className=" text-lg capitalize text-center font-semibold text-black">
         {name}
       </h2>
     </div>

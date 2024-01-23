@@ -9,7 +9,7 @@ export default function Home() {
     <div>
     {/* about section */}
       <div className=" flex gap-5 flex-col mb-5">
-        <h2 className="text-2xl w-32 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
+        <h2 className="text-2xl w-[60%] md:w-40 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
           about me
         </h2>
         <p className=" text-sm font-semibold text-justify">
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       {/* my work section */}
       <div className=" mb-5">
-        <h2 className="mb-5 text-2xl w-36 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
+        <h2 className="mb-5 text-2xl w-[60%] md:w-40 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
           What I Do !
         </h2>
 
@@ -45,7 +45,7 @@ export default function Home() {
       </div>
         {/* education section */}
       <div className="mb-5 w-full">
-        <h2 className="mb-5 text-2xl w-36 text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
+        <h2 className="mb-5 text-2xl w-[60%] md:w-40 text-center  font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
           education
         </h2>
 
@@ -59,9 +59,9 @@ export default function Home() {
             <h2 className="text-lg mb-1 font-semibold inline-block capitalize ">
             Thakurgaon Polytecnic Institute
             </h2>
-            <p className=" text-sm mb-1  font-semibold text-justify">Computer science and Technology</p>
-            <p className=" text-sm mb-1  font-semibold text-justify">Session : 2019 - 2020</p>
-            <p className=" text-sm mb-1 font-semibold text-justify">Passing Year : December 2023</p>
+            <p className=" text-sm mb-1  font-semibold text-start w-full">Computer science and Technology</p>
+            <p className=" text-sm mb-1  font-semibold text-start w-full">Session : 2019 - 2020</p>
+            <p className=" text-sm mb-1 font-semibold text-start w-full">Passing Year : December 2023</p>
           </div>
           
 
@@ -73,16 +73,16 @@ export default function Home() {
             <h2 className="text-lg mb-1 font-semibold inline-block capitalize ">
             Abad Takia Mohammadia Fazil Madrasah
             </h2>
-            <p className=" text-sm mb-1  font-semibold text-justify">Department : science</p>
-            <p className=" text-sm mb-1  font-semibold text-justify">Session : 2017 - 2019</p>
-            <p className=" text-sm mb-1 font-semibold text-justify">Passing Year : December 2019</p>
+            <p className=" text-sm mb-1  font-semibold text-start w-full">Department : science</p>
+            <p className=" text-sm mb-1  font-semibold text-start w-full">Session : 2017 - 2019</p>
+            <p className=" text-sm mb-1 font-semibold text-start w-full">Passing Year : December 2019</p>
           </div>
 
         </div>
       </div>
       {/* training section */}
       <div className="mb-5 w-full">
-        <h2 className="mb-5 text-2xl text-center font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
+        <h2 className="mb-5 text-2xl  text-start font-semibold border-b-2 border-cyan-300 inline-block px-1  capitalize">
           training and experience
         </h2>
 
@@ -97,8 +97,8 @@ export default function Home() {
                 <h2 className="text-lg mb-1 font-semibold inline-block capitalize ">
                 Universe IT Institute
                 </h2>
-                <p className=" text-sm mb-1  font-semibold text-justify">Duration : 6 month</p>
-                <p className=" text-sm mb-1 font-semibold text-justify">Certification Date : 01/01/2024</p>
+                <p className=" text-sm mb-1  font-semibold text-start w-full">Duration : 6 month</p>
+                <p className=" text-sm mb-1 font-semibold text-start w-full">Certification Date : 01/01/2024</p>
             </div>
           </div>
         </div>
