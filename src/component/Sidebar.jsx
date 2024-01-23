@@ -110,7 +110,7 @@ export default function Sidebar() {
             <div className=" flex flex-col justify-between font-bold pl-6">
               <small>Email</small>
               <small className=" text-blue-600 tracking-wide">
-                mujahidislam400301@gmail.com
+                {/* mujahidislam400301@gmail.com */}
               </small>
             </div>
           </li>

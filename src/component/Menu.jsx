@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export default function Menu() {
   return (
     <div>
-        <ul className=' xl:mt-20 w-full mx-auto grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-3 items-center justify-center gap-3 lg:gap-10 p-3'>
+        <ul className=' xl:mt-20 w-full mx-auto grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-3 items-center justify-center gap-3 lg:gap-10 py-4'>
             <Link to={"/"}>
                 <li className=' md:py-6 p-1 bg-white rounded-xl text-center font-semibold capitalize mb-5 md:mb-0 flex flex-col h-auto items-center justify-center gap-1 md:gap-2  lg:px-5 lg:py-3 border-[1px] border-slate-300 shadow-md shadow-slate-300'><img className='md:w-16 w-10' src={home1} alt="home" />home</li>
             </Link>

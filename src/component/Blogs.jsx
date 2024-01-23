@@ -8,34 +8,34 @@ import { Link } from 'react-router-dom'
 const Blogs= () => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-3 mx-auto">
-        <div className="flex flex-wrap -m-4">
+      <div className="container p-7 mx-auto">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 -m-4">
           {/* Blog 1 */}
           <Card
           img ={MERN}
           name="MERN Stuck"
-          text="MERN is one of several variations of the MEAN stack(MongoDB Express Angular Node), where the traditional Angular.js front-end framework is replaced with React.js."
+          text="MERN is one of several variations of the MEAN stack(MongoDB Express Angular Node),"
           link="https://www.mongodb.com/mern-stack#:~:text=MERN%20stands%20for%20MongoDB%2C%20Express,MongoDB%20%E2%80%94%20document%20database"
           ></Card>
           {/* Blog 2 */}
           <Card
           img ={react}
           name="react js"
-          text="React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components"
+          text="React is a declarative, efficient, and flexible JavaScript library for building user interfaces."
           link="https://react.dev/"
           ></Card>
           {/* Blog 3 */}
           <Card
           img ={vite}
           name="vite"
-          text="Vite JS is majorly used to set up a development environment for various frameworks like React and Vue, and even for a Vanilla JavaScript app with a dev server and hot reloading by following just three commands."
+          text="Vite JS is majorly used to set up a development environment for various frameworks like React "
           link="https://vitejs.dev/"
           ></Card>
           {/* Blog 4 */}
           <Card
           img ={express}
           name="express js"
-          text="Express is a node js web application framework that provides broad features for building web and mobile applications."
+          text="Express is a node js web application framework that provides broad features for building web applications."
           link="https://expressjs.com/"
           ></Card>
           {/* Blog 5 */}
@@ -57,12 +57,12 @@ export default Blogs;
 function Card({img,name,text,link}){
     return(
         <>
-            <div data-aos="zoom-out" className="p-4 md:w-1/3">
+            <div data-aos="zoom-out" className=" w-full">
             <div className="h-full border-[1px] shadow-lg shadow-slate-200 border-slate-400 border-opacity-60 rounded-lg overflow-hidden">
-            <aside className=' w-full md:flex items-center justify-center bg-stone-200 rounded-lg'>
-              <img className="  w-full md:w-48 object-cover object-center" src={img} alt={img} />
+            <aside className=' w-full md:flex items-center justify-center bg-stone-200'>
+              <img className="  w-full md:w-44 h-auto object-cover object-center p-5" src={img} alt={img} />
             </aside>
-              <div className="p-6 flex flex-col justify-end">
+              <div className="p-2 flex flex-col justify-end">
                 <h1 className="title-font text-lg font-medium capitalize text-gray-900 mb-3">{name}</h1>
                 <p className=" text-sm font-medium mb-3">{text}</p>
                 <div className='flex justify-between items-end'>
