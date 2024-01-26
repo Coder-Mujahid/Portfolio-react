@@ -43,7 +43,7 @@ function Card({ img, name, link }) {
   return (
     <div
       data-aos="fade-up"
-      className=" grid grid-cols-3 h-full overflow-hidden items-end mb-5 w-auto rounded-xl border-[1px] border-slate-100 shadow-md shadow-slate-300 p-3"
+      className=" grid grid-cols-1 md:grid-cols-3 h-full overflow-hidden items-end mb-5 w-auto rounded-xl border-[1px] border-slate-100 shadow-md shadow-slate-300 p-3"
     >
       <img className="w-72 md:h-56 col-span-1" src={img} alt={img} />
       <div className='flex flex-col col-span-2 justify-center h-full w-full'>
